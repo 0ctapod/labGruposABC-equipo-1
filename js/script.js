@@ -2,8 +2,6 @@
 let contador = 0;
 
 
-
-
 function voltear(card){
     card.classList.toggle("volteada")
 }
@@ -15,11 +13,11 @@ function filtrar(tipo) {
 
   cards.forEach(card => {
 
-    if (tipo === "todas") {
+    if (tipo === "alls") {
       card.style.display = "block";
     } else {
       card.style.display =
-        card.dataset.tipo === "vocal"
+        card.dataset.tipo === "vocals"
           ? "block"
           : "none";
     }
