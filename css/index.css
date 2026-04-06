@@ -39,10 +39,17 @@ main {
     padding: 15px;
 }
 #actionButtons button{
-    display: flex;
-    justify-content: center;
-    
+   padding: 10px 15px;
+   border: none;
+   background: #333;
+   color: white;
+   border-radius: 6px ;
+   cursor: pointer;
 }
+#actionButtons button:hover{
+ background: #555;
+}
+
 
 #abcGallery {
     flex: 1;
@@ -108,5 +115,7 @@ main {
 #teamSection {
     width: 100%;
     padding: 20px;
-    text-align: center;   
+    text-align: center;
+    background-color: #222;
+    color: white;   
 }
