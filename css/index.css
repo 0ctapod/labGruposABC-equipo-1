@@ -104,3 +104,9 @@ main {
   object-fit: contain;
   margin-bottom: 5px;
 }
+
+#teamSection {
+    width: 100%;
+    padding: 20px;
+    text-align: center;   
+}
