@@ -1,431 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC challenge</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>ABC Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
         <nav id="navbar">
-            <h1>ABC challenge</h1>
-            <p>contador letras vistas:<span id="counter"> 0</span></p>
+            <h1>ABC Challenge</h1>
+            <p>Letras vistas: <span id="counter">0</span></p>
         </nav>
+
         <section id="actionButtons">
-                <button id="vocals">Vocales</button>
-                <button id="alls">Todas</button>
+            <button onclick="filtrar('vocales')">Vocales</button>
+            <button onclick="filtrar('todas')">Todas</button>
         </section>
 
         <section id="abcGallery">
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="vocal" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>A</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://www.fertilome.com/media/klowrey/Article%20Images/Tree.jpg" alt="Arbol">
+                        <h3>Arbol</h3>
                     </div>
-
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>B</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="https://img.freepik.com/premium-photo/close-up-avocado-isolated-white-background-healthy-eco-food-ai-generated_755721-10951.jpg" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://www.boatjump.com/blog/wp-content/uploads/2017/11/El-barco-uno-de-los-medios-de-transporte-mas-antiguo-2.jpg" alt="Barco">
+                        <h3>Barco</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>C</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://www.shutterstock.com/image-vector/simple-small-house-digital-illustration-600nw-2642400313.jpg" alt="Casa">
+                        <h3>Casa</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>D</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpvUlzVZ4_r9oUVIWxsnfWS7tnyWiAqzmGPA&s" alt="Dado">
+                        <h3>Dado</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="vocal" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>E</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/African_Bush_Elephant.jpg"
+                            alt="Elefante">
+                        <h3>Elefante</h3>
                     </div>
-                    
                 </div>
             </div>
 
-
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>F</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://www.viveroelencanto.com/wp-content/uploads/2023/06/89-FLOR-DE-PAPEL.jpg" alt="Flor">
+                        <h3>Flor</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>G</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Gato">
+                        <h3>Gato</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>H</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-VBKcoyIMxLqntSD_HMjnEy6XBiQv7zvTTg&s"
+                            alt="Helado">
+                        <h3>Helado</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="vocal" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>I</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://previews.123rf.com/images/mykub/mykub2312/mykub231201026/220714300-island-flat-vector-illustration-island-cartoon-hand-drawing-isolated-vector-illustration.jpg" alt="Isla">
+                        <h3>Isla</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>J</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg"
+                            alt="Jirafa">
+                        <h3>Jirafa</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>K</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Kiwi_aka.jpg" alt="Kiwi">
+                        <h3>Kiwi</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            
-
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
+                    <div class="card-frente">
+                        <h1>L</h1>
+                    </div>
+                    <div class="card-dorso">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg" alt="Luna">
+                        <h3>Luna</h3>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
+                <div class="card-inner">
                     <div class="card-frente">
                         <h1>M</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://img.freepik.com/foto-gratis/nino-mano-contando-dedos-cinco_628469-497.jpg?semt=ais_hybrid&w=740&q=80" alt="Mano">
+                        <h3>Mano</h3>
                     </div>
-                    
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
                         <h1>N</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://images.unsplash.com/photo-1569428034239-f9565e32e224?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYSUyMG51YmV8ZW58MHx8MHx8fDA%3D"
+                            alt="Nube">
+                        <h3>Nube</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="vocal" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>O</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://www.clinicasnovovision.com/wp-content/uploads/2019/04/que-es-el-ojo.jpg"
+                            alt="Ojo">
+                        <h3>Ojo</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>P</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="Perro">
+                        <h3>Perro</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>Q</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://img.freepik.com/vector-gratis/dibujos-animados-aislados-queso-simple_1308-124064.jpg?semt=ais_hybrid&w=740&q=80" alt="Queso">
+                        <h3>Queso</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>R</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_996694-CBT82235654890_022025-O.webp" alt="Reloj">
+                        <h3>Reloj</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>S</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Solar_sys8.jpg" alt="Sol">
+                        <h3>Sol</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>T</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tigre">
+                        <h3>Tigre</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="vocal" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>U</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Kyoho-grape.jpg" alt="Uva">
+                        <h3>Uva</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>V</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://a.storyblok.com/f/160385/4bf112f0cd/datos_curiosos.jpg/m/?w=256&q=100"
+                            alt="Vaca">
+                        <h3>Vaca</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>W</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://e7.pngegg.com/pngimages/486/570/png-clipart-wi-fi-wi-fi-thumbnail.png" alt="Wifi">
+                        <h3>Wifi</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>X</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://casajayes.com/cdn/shop/files/MUAB25_edec961f-3ac2-4f31-bf38-1a608e97632d.png?v=1752264707" alt="Xilófono">
+                        <h3>Xilófono</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>Y</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://static.caribbeannewsdigital.com/cdn/ff/p4PMREtPq7ONpNTmlJPSosOOtlJjiTtNXxCdwNAKmog/1707784890/public/2021-06/yuca-beneficios-salud-1.jpg" alt="Yuca">
+                        <h3>Yuca</h3>
                     </div>
                 </div>
             </div>
 
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
+            <div class="card" data-tipo="consonante" onclick="voltear(this)">
                 <div class="card-inner">
-
                     <div class="card-frente">
-                        <h1>N</h1>
+                        <h1>Z</h1>
                     </div>
-
                     <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_883081-MCO108042664910_032026-O.webp" alt="Zapato">
+                        <h3>Zapato</h3>
                     </div>
                 </div>
             </div>
-
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
-                <div class="card-inner">
-
-                    <div class="card-frente">
-                        <h1>N</h1>
-                    </div>
-
-                    <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
-                    </div>
-                </div>
-            </div>
-            <div class='card' data-tipo='vocal' onclick='voltear(this)'>
-                <div class="card-inner">
-
-                    <div class="card-frente">
-                        <h1>N</h1>
-                    </div>
-
-                    <div class="card-dorso">
-                        <img src="url" alt="aguacate">
-                        <h3>aguacate</h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-
         </section>
 
-        <footer id="teamSection">
-         <h2>Equipo de trabajo #1 :</h2>
-         <p>Octavio Franco</p>
-         <p>Karen Diaz</p>
-         <p>Brayan Castro</p>
-         <p>Leider Merchan</p>
-         <p>Hernan Vasquez</p>
+        <footer id="seccionEquipo">
+            <h2>Equipo de trabajo #1</h2>
+            <p>Octavio Franco</p>
+            <p>Karen Diaz</p>
+            <p>Brayan Castro</p>
+            <p>Leider Merchan</p>
+            <p>Hernan Vasquez</p>
         </footer>
     </main>
-    <script src="js/index.js"></script>
- </body>
+
+    <script src="js/script.js"></script>
+</body>
+
 </html>
